@@ -10,18 +10,18 @@
 <body>
     <nav id='navbar'>
         <header>React Documentation</header>
-        <a href="" class="">Hello World</a>
-        <a href="" class="">Introducing JSX</a>
-        <a href="" class="">Rendering Elements</a>
-        <a href="" class="">Components and Props</a>
-        <a href="" class="">State and Lifecycle</a>
-        <a href="" class="">Handling Events</a>
-        <a href="" class="">Conditional Rendering</a>
-        <a href="" class="">Lists and Keys</a>
-        <a href="" class="">Forms</a>
-        <a href="" class="">Lifting State Up</a>
-        <a href="" class="">Composition vs Inheritance</a>
-        <a href="" class="">Thinking in react</a>
+        <a href="#Hello_World" class="nav-link">Hello World</a>
+        <a href="#Introducing_JSX" class="nav-link">Introducing JSX</a>
+        <a href="#Rendering_Elements" class="nav-link">Rendering Elements</a>
+        <a href="#Components_and_Props" class="nav-link">Components and Props</a>
+        <a href="#State_and_Lifecycle" class="nav-link">State and Lifecycle</a>
+        <a href="#Handling_Events" class="nav-link">Handling Events</a>
+        <a href="#Conditional_Rendering" class="nav-link">Conditional Rendering</a>
+        <a href="#Lists_and_Keys" class="nav-link">Lists and Keys</a>
+        <a href="#Forms" class="nav-link">Forms</a>
+        <a href="#Lifting_State_Up" class="nav-link">Lifting State Up</a>
+        <a href="#Composition_vs_Inheritance" class="nav-link">Composition vs Inheritance</a>
+        <a href="#Thinking_in_React" class="nav-link">Thinking in React</a>
 
     </nav>
     <main id='main-doc'>
@@ -51,15 +51,57 @@
                     <code contenteditable spellcheck="false">
                         const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;
                     </code>
-                  </pre>
+                </pre>
+            </p>    
+            <p class="">This funny tag syntax is neither a string nor HTML.
 
+                It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
+                
+                JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.
+                
             </p>
-         
-        
+            <h4 class="">Why JSX</h4>
+            <p class="">
+                React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
+
+                Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.
+
+                React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.
+
+                With that out of the way, let’s get started!
+            </p>
+            <h4>Embedding Expressions in JSX</h4>
+            <p>In the example below, we declare a variable called name and then use it inside JSX by wrapping it in curly braces:</p>
+            <pre>
+                <code contenteditable spellcheck="false">
+                    const name = 'Josh Perez';
+                    const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
+
+                    ReactDOM.render(
+                    element,
+                    document.getElementById('root')
+                    );
+                </code>
+            </pre>
         </section>
         <section class='main-section' id='Rendering_Elements'>
             <header class="">Rendering Elements</header>
-
+            
+            <pre>
+                <code contenteditable spellcheck="false">
+                    const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;
+                </code>
+            </pre>
+            <p>Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.</p>
+            <h4>
+                Rendering elements into the DOM.
+            </h4>
+            <p>Let’s say there is a &lt;div&gt; somewhere in your HTML file</p>
+            <pre>
+                <code contenteditable spellcheck="false">
+                    &lt;div id="root"&gt;&lt;/div&gt;
+                </code>
+            </pre>    
         </section>
         <section class='main-section' id='Components_and_Props'>
             <header class="">Components and Props</header>
