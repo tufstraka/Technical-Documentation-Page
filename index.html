@@ -101,48 +101,86 @@
                 <code contenteditable spellcheck="false">
                     &lt;div id="root"&gt;&lt;/div&gt;
                 </code>
-            </pre>    
+            </pre>
+            <p>
+                We call this a “root” DOM node because everything inside it will be managed by React DOM. <br> <br>
+
+                Applications built with just React usually have a single root DOM node. If you are integrating React into an existing app, you may have as many isolated root DOM nodes as you like.
+
+                To render a React element into a root DOM node, pass both to ReactDOM.render():
+            </p>
+            <pre>
+                <code contenteditable spellcheck="false">
+                    
+                    const element = &lt;h1&gt;Hello World&lt;/h1&gt;;
+
+                    ReactDOM.render(
+                    element,
+                    document.getElementById('root')
+                    );
+                </code>
+            </pre>
+
         </section>
         <section class='main-section' id='Components_and_Props'>
             <header class="">Components and Props</header>
+            <p>
+               Types of Components:
+               <ul>
+                   <li>Functional Components</li>
+                   <li>Class Components</li>
+               </ul>       
+            </p>
 
         </section>
         <section class='main-section' id='State_and_Lifecycle'>
             <header class="">State and Lifecycle</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 
         </section>
         <section class='main-section' id='Handling_Events'>
             <header class="">Handling Events</header>
-
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+                <li>Vestibulum auctor dapibus neque.</li>
+             </ul>    
         </section>
         <section class='main-section' id='Conditional_Rendering'>
             <header class="">Conditional Rendering</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
         </section>
         <section class='main-section' id='Lists_and_Keys'>
             <header class="">Lists and Keys</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
         </section>
         <section class='main-section' id='Forms'>
             <header class="">Forms</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
         </section>
         <section class='main-section' id='Lifting_State_Up'>
             <header class="">Lifting State Up</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
         </section>
         <section class='main-section' id='Composition_vs_Inheritance'>
             <header class="">Composition vs Inheritance</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
         </section>
         <section class='main-section' id='Thinking_in_React'>
             <header class="">Thinking in React</header>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
         </section>
 
     </main>
     
 </body>
-<Script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></Script>
+
 </html>
 
