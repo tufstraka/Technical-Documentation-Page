@@ -1,2 +1,1 @@
-# Technical-Documentation-Page
-Sample Technical Documentation Page
+## Technical documentation page
